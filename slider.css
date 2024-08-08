@@ -1,0 +1,47 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+main{
+    width: 100%;
+    height: 750px;
+    margin-top: 100px;
+    position: relative;
+    overflow: hidden;
+}
+
+.slide{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.icon-button {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon-button svg {
+    width: 24px;
+    height: 24px;
+}
+
+.icon-button:hover svg {
+    stroke: #555; /* Change to desired hover color */
+}
+
+.icon-button:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px #333; /* Focus outline for accessibility */
+}
+
+.nav{
+    text-align: center;
+}
