@@ -2,46 +2,52 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    background-color: rgb(251, 250, 250);
 }
+
+
+
 
 main{
     width: 100%;
-    height: 750px;
+    height: 700px;
     margin-top: 100px;
     position: relative;
-    overflow: hidden;
+    overflow: hidden; 
 }
 
 .slide{
     width: 100%;
     height: 100%;
+    transition: 500ms;
     position: absolute;
 }
 
-.icon-button {
-    background: none;
-    border: none;
-    padding: 0;
+.right{
+    height: 100px;
+    width: 80px;
     cursor: pointer;
-    display: inline-flex;
+    /* position: absolute; */
+    /* top: 50%; */
+}
+
+.left{
+    height: 100px;
+    width: 80px;
+    cursor: pointer;
+    transform: rotate(180deg);
+    /* position: absolute; */
+    /* top: 50%; */
+} 
+
+.slider {
+    display: flex;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
+    position: relative; 
+    width: 100%;
 }
 
-.icon-button svg {
-    width: 24px;
-    height: 24px;
-}
 
-.icon-button:hover svg {
-    stroke: #555; /* Change to desired hover color */
-}
 
-.icon-button:focus {
-    outline: none;
-    box-shadow: 0 0 0 2px #333; /* Focus outline for accessibility */
-}
-
-.nav{
-    text-align: center;
-}

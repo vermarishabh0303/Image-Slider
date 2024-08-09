@@ -4,7 +4,12 @@ slides.forEach(
     (slide, index)=>{
         slide.style.left = `${index*100}%`
     }
-)
+) 
+const left = document.querySelector(".left");
+const right = document.querySelector(".right");
+
+
+
 let counter = 0;
 const slideImage = ()=>{
     slides.forEach(
@@ -29,3 +34,20 @@ const goNext = ()=>{
     counter++;
     slideImage();
 }
+
+
+left.addEventListener('click', ()=>{goPrev()});
+right.addEventListener('click', ()=>{goNext()});
+
+
+let slideInterval;
+
+const startSlideshow = ()=>{
+    slideInterval = setInterval(()=>{
+        goNext();
+    }, 2000);
+};
+
+startSlideshow();
+
+// clearInterval(slideInterval);
