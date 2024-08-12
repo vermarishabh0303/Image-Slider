@@ -60,3 +60,5 @@ left.addEventListener('mouseout', startSlideshow);
 
 right.addEventListener('mouseover', stopSlideshow);
 right.addEventListener('mouseout', startSlideshow);
+
+
